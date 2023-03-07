@@ -1,0 +1,18 @@
+@startuml LogIn
+left to right direction
+package USERS{
+   actor Diák as d
+   actor Munkáltató as m
+   actor serveradmin as sa
+}
+package WEBOLDAL{
+    usecase "Bejelentkezés" as UC1
+    usecase "Regisztráció" as UC2
+
+}
+d-[bold]->UC1
+m-[bold]->UC1
+
+d-[bold]->UC2
+m-[bold]->UC2
+@enduml

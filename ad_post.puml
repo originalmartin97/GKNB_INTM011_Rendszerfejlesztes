@@ -1,0 +1,7 @@
+@startuml PostingAdvertisement
+left to right direction
+package USERS{
+   actor Diák as diak
+}
+package WEBOLDAL{}
+@enduml
